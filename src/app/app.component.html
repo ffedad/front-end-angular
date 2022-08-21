@@ -1,9 +1,11 @@
-<div>
-<button [routerLink]="['/login']">Login</button>  
-<button [routerLink]="['/signup']">Signup</button> 
-<button [routerLink]="['/account']">Account</button> 
-</div>
 
+<body>
+    <ul>
+      <li><a [routerLink]="['/account']">Account</a></li>
+      <li><a [routerLink]="['/login']">Login</a></li>
+      <li><a [routerLink]="['/signup']">Signup</a></li>
+    </ul> 
+</body>
 <router-outlet></router-outlet>
 
 
