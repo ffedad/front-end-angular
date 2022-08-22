@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CognitoService } from '../cognito.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  isAuthenticated: boolean;
+
+  constructor(private router: Router,
+              private cognitoService: CognitoService) {
+    this.isAuthenticated = false;
+  }
 
   ngOnInit(): void {
   }

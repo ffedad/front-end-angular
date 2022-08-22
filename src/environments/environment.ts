@@ -3,8 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseURL: "http://localhost:4200/",
+  cognito: {
+    userPoolId: 'us-east-2_jxfTGbZlK',
+    userPoolWebClientId: '6tp7nduerrf1djtquo6kf1pur6',
+  },
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file
