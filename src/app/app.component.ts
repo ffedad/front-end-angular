@@ -20,6 +20,8 @@ import { CognitoService } from './cognito.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  
+  title = 'front-end-angular';
 
   isAuthenticated: boolean;
 
